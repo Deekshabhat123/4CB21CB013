@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top N Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Top N Products</h1>
+            <div id="filters">
+                <select id="categoryFilter">
+                    <option value="">All Categories</option>
+                </select>
+                <select id="companyFilter">
+                    <option value="">All Companies</option>
+                </select>
+                <select id="availabilityFilter">
+                    <option value="">All</option>
+                    <option value="available">Available</option>
+                    <option value="unavailable">Unavailable</option>
+                </select>
+                <button id="sortPrice">Sort by Price</button>
+                <button id="sortRating">Sort by Rating</button>
+                <button id="sortDiscount">Sort by Discount</button>
+            </div>
+        </header>
+        <main>
+            <div id="productList"></div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
